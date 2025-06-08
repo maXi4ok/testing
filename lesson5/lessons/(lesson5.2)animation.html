@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .pink-box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto 0 auto; 
+            animation: lorem 5s linear infinite alternate; 
+            /* alternate це для того, щоб анімка плавно переходила на початок       */
+        }
+        .blue-box{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            margin: 100px auto 0 auto; 
+            animation: lorem2 5s linear infinite alternate; 
+        }
+        @keyframes lorem{
+            from{
+                transform: scale(1,2);
+            }
+            to{
+                transform: scale(1) rotate(-60deg);
+                background: yellow;
+
+            }        
+        }
+        @keyframes lorem2{
+            from{
+                transform: translateX(300px,);
+            }
+            to{
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pink-box"></div>
+    <div class="blue-box"></div>
+    
+</body>
+</html>

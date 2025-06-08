@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    h1+p{  /* для наступного елементу після h1 */
+        color: red;
+    }
+    h1~p{  /* для всіх наступних елементів після h1 */
+        color: rgb(0, 255, 251);
+    }
+    div>p>span{  /* для span, який є нащадком p, який є нащадком div */
+        color: green;
+    }
+
+    </style>
+</head>
+<body>
+<h1>Lorem ipsum dolor sit.</h1>
+<p>Lorem ipsum dolor sit amet consectetur.</p>
+<p>Lorem ipsum dolor sit amet consectetur.</p>
+<p>Lorem ipsum dolor sit amet consectetur.</p>
+<p>Lorem ipsum dolor sit amet consectetur.</p>
+<p>Lorem ipsum dolor sit amet consectetur.</p>
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem <span>ipsum dolor</span> sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+</div>
+</body>
+</html>
